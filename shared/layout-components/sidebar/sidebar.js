@@ -34,20 +34,20 @@ const SideBar = () => {
 									<span className="sidemenu-label">Dashboard</span>
 								</a>
                 </Link>
-                <Link href={"/widgets"}>
+                <Link href={"authentication/login"}>
 								<a className="nav-link" href="index.html">
 									<span className="shape1"></span>
 									<span className="shape2"></span>
 									<i className="ti-home sidemenu-icon menu-icon "></i>
-									<span className="sidemenu-label">Widgets</span>
+									<span className="sidemenu-label">Login</span>
 								</a>
                 </Link>
-								<Link href={"/"}>
+								<Link href={"/authentication/register"}>
 								<a className="nav-link" href="index.html">
 									<span className="shape1"></span>
 									<span className="shape2"></span>
 									<i className="ti-home sidemenu-icon menu-icon "></i>
-									<span className="sidemenu-label">Logout</span>
+									<span className="sidemenu-label">Register</span>
 								</a>
                 </Link>
 							</li>
