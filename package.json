@@ -1,5 +1,5 @@
 {
-  "name": "uni-project-management",
+  "name": "spruha",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,10 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "eslint": "8.29.0",
-    "eslint-config-next": "13.0.6",
-    "next": "13.0.6",
+    "bootstrap": "^5.2.3",
+    "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-bootstrap": "^2.6.0",
+    "react-dom": "18.2.0",
+    "react-helmet": "^6.1.0",
+    "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "eslint": "8.25.0",
+    "eslint-config-next": "12.3.1"
   }
 }
