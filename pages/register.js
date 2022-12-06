@@ -1,5 +1,5 @@
 import React from 'react'
-import Seo from '../../shared/layout-components/seo/seo'
+import Seo from '../shared/layout-components/seo/seo'
 
 import { Row, Col, Card, Container, Form } from "react-bootstrap";
 import Link from "next/link"
@@ -8,11 +8,11 @@ import Link from "next/link"
 
 
 //Images
-import logolight from "../../public/assets/img/brand/logo-light.png"
-import user from "../../public/assets/img/svgs/user.svg"
-import logo from "../../public/assets/img/brand/logo.png"
+import logolight from "../public/assets/img/brand/logo-light.png"
+import user from "../public/assets/img/svgs/user.svg"
+import logo from "../public/assets/img/brand/logo.png"
 
-const Signup = () => {
+const Register = () => {
   
   return (
     <div>
@@ -92,6 +92,16 @@ const Signup = () => {
                             type="password"
                           />
                         </Form.Group>
+                        <Form.Group
+                          className="text-start form-group"
+                          controlId="Select user type"
+                          >
+                          <Form.Label>User type</Form.Label>
+                          <Form.Select aria-label="selectCourse">
+                            <option value="1">Student</option>
+                            <option value="2">Supervisor</option>
+                          </Form.Select> 
+                          </Form.Group>
 
                         <button className="btn ripple btn-main-primary btn-block mt-2">
                           Create Account
@@ -101,7 +111,7 @@ const Signup = () => {
                         <p className="mb-0">
                           Already have an account?
                           <Link
-                            href={`/authentication/login/`}> 
+                            href={`/login`}> 
 							            <a> Login </a>
                           </Link>
                         </p>
@@ -118,6 +128,7 @@ const Signup = () => {
 			</div>
   )
 }
-Signup.layout = "Authenticationlayout"
 
-export default Signup
+Register.layout = "Authenticationlayout"
+
+export default Register

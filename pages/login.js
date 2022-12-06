@@ -1,15 +1,15 @@
 import React from 'react'
 import dynamic from 'next/dynamic';
-import Seo from '../../shared/layout-components/seo/seo'
+import Seo from '../shared/layout-components/seo/seo'
 import { Row, Col, Card, Container, Form } from "react-bootstrap";
 
 import Link from "next/link"
 
 
 //Images
-import logolight from "../../public/assets/img/brand/logo-light.png"
-import user from "../../public/assets/img/svgs/user.svg"
-import logo from "../../public/assets/img/brand/logo.png"
+import logolight from "../public/assets/img/brand/logo-light.png"
+import user from "../public/assets/img/svgs/user.svg"
+import logo from "../public/assets/img/brand/logo.png"
 import { useRouter } from 'next/router';
 
 const Login = () => {
@@ -102,6 +102,8 @@ const Login = () => {
                                 type="password"
                               />  
                           </Form.Group>
+
+                         
                           <button className="btn ripple btn-main-primary btn-block mt-2" onClick={loginHandler}>
                             Sign In
                           </button>
@@ -117,11 +119,12 @@ const Login = () => {
                           </Link>
                         </div>
                         <div>
-                          {`Don't`} have an account?
+                          {`Don't`} have an account? 
+                          <span> </span>
                           <Link
-                              href={`/authentication/register`}
+                              href={`/register`}
                             >
-                          Resgister Here
+                           Create Account
                           </Link>
                           </div>
                         </div>
